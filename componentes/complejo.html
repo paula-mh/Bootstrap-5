@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Componentes Bootstrap 5</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Dropdown</h1>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> Listado</button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <hr class="dropdown-divider" />
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+      </ul>
+    </div>
+    <br><br>
+    <h1>Nav</h1>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Opción 3</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <hr class="dropdown-divider" />
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <br><br>
+    <h1>Nav</h1>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Opción 3</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <hr class="dropdown-divider" />
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <br><br>
+    <h1>Nav</h1>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Opción 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link disabled">Opción 3</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <hr class="dropdown-divider" />
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <br><br>
+    <h1>Cards</h1>
+    <div class="card">
+      <div class="card-header">Header</div>
+      <div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum porro cumque maxime
+        laboriosam repudiandae tenetur voluptate eligendi quidem a. Doloremque explicabo assumenda ullam ratione
+        obcaecati cupiditate dolor, corrupti natus magni?</div>
+      <div class="card-footer text-bg-danger">Footer</div>
+    </div>
+    <br><br>
+    <h1>Modal</h1>
+    <div class="modal" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Modal Title</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Contenedor
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+            <button class="btn btn-success">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Abrir modal</button>
+    <br><br>
+  </div>
+  <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

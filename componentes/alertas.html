@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alertas Bootstrap 5</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+<h3>Alerta</h3>
+<div class="alert alert-success">Alerta</div>
+<div class="alert alert-primary">Alerta</div>
+<div class="alert alert-danger">Alerta</div>
+<h3>Contenido</h3>
+<div class="alert alert-danger">
+    <h4 class="alert-heading">Título</h4>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptates at minima dignissimos nobis quas magnam ab dolor, qui, laboriosam suscipit nesciunt expedita assumenda praesentium, ea sint maxime voluptatibus. Iste.
+</div>
+<h3>Cerrar</h3>
+<div class="alert alert-danger show fade" id="myAlert">
+    <h4 class="alert-heading">Título</h4>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, quia labore cupiditate inventore quam laboriosam sed, velit magni incidunt beatae veritatis in, obcaecati ad aperiam! At, minus officia! Repellendus, animi.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const myAlert = document.getElementById("myAlert")
+        myAlert.addEventListener('close.bs.alert', event => {
+            console.log('cerrado')
+        });
+
+        myAlert.addEventListener('closed.bs.alert', event => {
+            console.log('cerrado con closed')
+        });
+
+        const myAlertI = bootstrap.Alert.getOrCreateInstance('#myAlert');
+        //myAlertI.close();
+    
+    </script>
+</body>
+</html>
